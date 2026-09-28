@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Pemasaran Produk Perangkat Keras - Bab 4 PKK Kelas XII SMK TKJ Hal 103-122. Developed by Satria Nugraha.">
+  <meta name="author" content="Satria Nugraha">
+  <title>Pemasaran Produk Perangkat Keras | Bab 4 PKK - Satria Nugraha</title>
+
+  <!-- Google Fonts: Space Grotesk & Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="neo-cyber-theme">
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="neo-topbar" id="neoTopBar">
+    <div class="topbar-inner">
+      <!-- Left Pill Brand Badge -->
+      <a href="#hero" class="neo-brand-pill">
+        <span class="brand-icon"><i class="fa-solid fa-gamepad"></i></span>
+        <span class="brand-title-text">HARDWARE PKK BAB 4</span>
+      </a>
+
+      <!-- Right Top Navigation Badges -->
+      <div class="topbar-right-group">
+        <div class="dev-header-pill">
+          <span class="dev-dot-pulse"></span>
+          <span>DEV: <strong>SATRIA NUGRAHA</strong></span>
+        </div>
+        <button id="themeModeToggle" class="neo-lang-pill" title="Ubah Mode Visual">
+          <span>ID / TKJ</span>
+          <i class="fa-solid fa-bolt text-yellow"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Floating Icon Dock (Navigation Shortcuts) -->
+  <aside class="floating-left-dock" aria-label="Navigasi Cepat Samping">
+    <a href="#hero" class="dock-btn active" title="Beranda Utama"><i class="fa-solid fa-house"></i></a>
+    <a href="#tiga-pilar-utama" class="dock-btn" title="3 Pilar Materi"><i class="fa-solid fa-layer-group"></i></a>
+    <a href="#terminal-preview" class="dock-btn" title="Apersepsi Hardware"><i class="fa-solid fa-terminal"></i></a>
+    <a href="#hakikat-dan-4p" class="dock-btn" title="Hakikat & 4P Mix"><i class="fa-solid fa-cubes"></i></a>
+    <a href="#lingkungan-dan-strategi" class="dock-btn" title="PESTLE & Strategi"><i
+        class="fa-solid fa-earth-americas"></i></a>
+    <a href="#periklanan-hardware" class="dock-btn" title="Periklanan Hardware"><i class="fa-solid fa-bullhorn"></i></a>
+    <a href="#afiliasi-dan-dropship" class="dock-btn" title="Afiliasi & Dropship"><i
+        class="fa-solid fa-network-wired"></i></a>
+    <a href="#author-card" class="dock-btn" title="Profil Satria Nugraha"><i class="fa-solid fa-user-astronaut"></i></a>
+  </aside>
+
+  <!-- Right Floating Action Dock (Social & Utilities) -->
+  <aside class="floating-right-dock" aria-label="Tautan & Interaksi">
+    <button id="btnScrollUp" class="dock-circle-btn blue" title="Gulir Cepat ke Atas"><i
+        class="fa-solid fa-arrow-up"></i></button>
+    <button id="btnSharePage" class="dock-circle-btn cyan" title="Salin Tautan Artikel"><i
+        class="fa-solid fa-share-nodes"></i></button>
+    <button id="btnPrintClean" class="dock-circle-btn pink" title="Cetak / Simpan PDF"><i
+        class="fa-solid fa-print"></i></button>
+    <a href="#author-card" class="dock-circle-btn magenta" title="Pengembang: Satria Nugraha"><i
+        class="fa-solid fa-code"></i></a>
+  </aside>
+
+  <!-- Main Container -->
+  <div class="main-content-layout">
+
+    <!-- HERO SECTION (MATCHING SCREENSHOT 1 & 2) -->
+    <section class="neo-hero-section" id="hero">
+      <div class="hero-container">
+
+        <!-- Badges Row -->
+        <div class="hero-badges-row">
+          <span class="neo-pill-badge yellow">
+            <i class="fa-solid fa-shield-halved"></i> KURIKULUM SMK TKJ KELAS XII
+          </span>
+          <span class="neo-pill-badge cyan">
+            <i class="fa-solid fa-microchip"></i> BAB 4: PEMASARAN HARDWARE
+          </span>
+          <span class="neo-pill-badge green">
+            <i class="fa-solid fa-book-open"></i> HALAMAN 103–122
+          </span>
+        </div>
+
+        <!-- Huge Hero Headline -->
+        <h1 class="hero-title-glitch">
+          Pemasaran Produk Perangkat Keras.
+        </h1>
+
+        <!-- Highlight Banner Pill -->
+        <div class="hero-action-pill-cyan">
+          <i class="fa-solid fa-bolt"></i> STRATEGI, ANALISIS &amp; PENETRASI PASAR
+        </div>
+
+        <!-- Hero Subtitle Description -->
+        <p class="hero-description-text">
+          Portal bacaan terpadu materi Produk Kreatif dan Kewirausahaan (PKK) halaman 103 s.d. 122. Membedah tuntas
+          hakikat pemasaran, bauran marketing mix (4P), dinamika makro PESTLE, etika periklanan, hingga eksekusi bisnis
+          dropship &amp; program afiliasi komputer.
+        </p>
+
+        <!-- Hero Action Buttons with Neon Glow -->
+        <div class="hero-buttons-group">
+          <a href="#hakikat-dan-4p" class="btn-neon-magenta">
+            <i class="fa-solid fa-book-bookmark"></i> BACA MATERI LENGKAP
+          </a>
+          <a href="#author-card" class="btn-neon-yellow">
+            <i class="fa-solid fa-user-check"></i> DEVELOPED BY SATRIA NUGRAHA
+          </a>
+          <a href="#afiliasi-dan-dropship" class="btn-neon-cyan">
+            <i class="fa-solid fa-arrow-trend-up"></i> STRATEGI DROPSHIP &amp; AFILIASI
+          </a>
+        </div>
+
+        <!-- 4-Box Key Stats (Matching Screenshot 3) -->
+        <div class="stats-cards-grid">
+          <div class="neo-stat-box">
+            <div class="stat-main-number">Hal. 103-122</div>
+            <div class="stat-sub-label">Rujukan Resmi Buku PKK</div>
+          </div>
+          <div class="neo-stat-box">
+            <div class="stat-main-number">Formula 4P</div>
+            <div class="stat-sub-label">Product, Price, Place, Promo</div>
+          </div>
+          <div class="neo-stat-box">
+            <div class="stat-main-number">Model PESTLE</div>
+            <div class="stat-sub-label">Analisis Lingkungan Makro</div>
+          </div>
+          <div class="neo-stat-box highlight-stat">
+            <div class="stat-main-number">Satria Nugraha</div>
+            <div class="stat-sub-label">Website Developer &amp; Author</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TERMINAL DEMO WINDOW (MATCHING SCREENSHOT 5) -->
+    <section class="neo-section-block" id="terminal-preview">
+      <div class="neo-container">
+
+        <div class="neo-window-box">
+          <!-- Window Header with Mac/Gamer Dots -->
+          <div class="window-header-bar yellow">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-cmd-pill">
+              <i class="fa-solid fa-terminal"></i> <span>pkk_hardware_marketing.sys &bull; APERSEPSI BAB 4 (Hal.
+                104)</span>
+            </div>
+            <div class="window-actions">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Window Inner Content -->
+          <div class="window-inner-body">
+            <div class="terminal-lead-quote">
+              <div class="quote-symbol"><i class="fa-solid fa-quote-left"></i></div>
+              <p>
+                "Ujung tombak dari sebuah perusahaan adalah aspek pemasaran. Aspek pemasaran bertanggung jawab agar
+                setiap produk perangkat keras dapat terjual, sehingga perusahaan mendapatkan keuntungan
+                berkesinambungan. Dengan menerapkan strategi pemasaran yang tepat, perusahaan hardware dapat
+                menghasilkan keuntungan maksimal."
+              </p>
+              <span class="quote-tag">&mdash; Dirangkum dari Buku PKK Kelas XII TKJ, Halaman 104</span>
+            </div>
+
+            <div class="terminal-quick-badges">
+              <span class="t-badge"><i class="fa-solid fa-check"></i> American Marketing Association (AMA)
+                Approved</span>
+              <span class="t-badge"><i class="fa-solid fa-check"></i> Sistem Pertukaran Nilai</span>
+              <span class="t-badge"><i class="fa-solid fa-check"></i> Berorientasi Kepuasan Konsumen</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3-COLUMN FEATURE CARDS (MATCHING SCREENSHOT 4: 30-Day, Lifetime, Builder Base Cards) -->
+    <section class="neo-section-block" id="tiga-pilar-utama">
+      <div class="neo-container">
+
+        <div class="section-badge-center">
+          <span class="neo-pill-badge yellow"><i class="fa-solid fa-stars"></i> TIGA INTISARI UTAMA</span>
+          <h2 class="neo-section-title">Pilar Strategis Pemasaran Perangkat Keras</h2>
+          <p class="neo-section-desc">Pilihan rangkuman topik terpenting yang dibahas di halaman 103 hingga 122.</p>
+        </div>
+
+        <div class="three-plans-grid">
+
+          <!-- Card 1 -->
+          <div class="neo-plan-card">
+            <div class="plan-header-title">Konsep Fundamental</div>
+
+            <div class="plan-price-pill yellow">
+              <span>BAB 4A</span>
+            </div>
+
+            <p class="plan-summary-text">
+              Hakikat pemasaran &amp; formula klasik 4P bauran pemasaran (Marketing Mix) untuk bisnis komputer.
+            </p>
+
+            <ul class="plan-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Hakikat Pemasaran menurut AMA (Hal. 104)</li>
+              <li><i class="fa-solid fa-circle-check"></i> 7 Aspek Orientasi Pasar &amp; Konsumen</li>
+              <li><i class="fa-solid fa-circle-check"></i> 4P: Product, Price, Place, Promotion</li>
+              <li><i class="fa-solid fa-circle-check"></i> Prinsip Win-Win mutual benefit</li>
+            </ul>
+
+            <a href="#hakikat-dan-4p" class="btn-plan-action">
+              BACA HAKIKAT &amp; 4P <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 (Most Popular / Highlight) -->
+          <div class="neo-plan-card highlighted-plan">
+            <div class="most-popular-pill">PALING POPULER &bull; BISNIS DIGITAL</div>
+
+            <div class="plan-header-title">Eksekusi Hardware</div>
+
+            <div class="plan-price-pill cyan">
+              <span>TEKNIK IT</span>
+            </div>
+
+            <p class="plan-summary-text">
+              Metode khusus pemasaran hardware: Program afiliasi, dropshipping tanpa stok, serta pasar promosi bundling.
+            </p>
+
+            <ul class="plan-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Makelar Online &amp; Tracking URL (Hal. 118)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dropship Blind Ship vs Dropship Berlabel</li>
+              <li><i class="fa-solid fa-circle-check"></i> Pasar Promosi Giveaway Vendor Besar</li>
+              <li><i class="fa-solid fa-circle-check"></i> Nawala, Katalog Produk, &amp; Mesin Pencari SEO</li>
+            </ul>
+
+            <a href="#afiliasi-dan-dropship" class="btn-plan-action pink-glow">
+              EKSPLORASI DROPSHIP <i class="fa-solid fa-bolt"></i>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="neo-plan-card">
+            <div class="plan-header-title">Lingkungan &amp; Iklan</div>
+
+            <div class="plan-price-pill yellow">
+              <span>ANALISIS</span>
+            </div>
+
+            <p class="plan-summary-text">
+              Membedah pengaruh makro PESTLE, lingkungan mikro terdekat, serta kode etik dan jenis periklanan.
+            </p>
+
+            <ul class="plan-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Analisis Makro PESTLE (Politik s.d. Ekologi)</li>
+              <li><i class="fa-solid fa-circle-check"></i> 4 Lingkungan Mikro (Konsumen, Karyawan, Supplier, Media)</li>
+              <li><i class="fa-solid fa-circle-check"></i> 5 Fungsi Komunikasi Iklan Kotler (1999)</li>
+              <li><i class="fa-solid fa-circle-check"></i> 4 Syarat Iklan &amp; Format Cetak/Elektronik</li>
+            </ul>
+
+            <a href="#lingkungan-dan-strategi" class="btn-plan-action">
+              BACA LINGKUNGAN &amp; IKLAN <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED SECTION 1: HAKIKAT & 4P MARKETING MIX -->
+    <section class="neo-section-block" id="hakikat-dan-4p">
+      <div class="neo-container">
+
+        <div class="neo-content-card">
+          <div class="card-kicker-tag yellow">
+            <i class="fa-solid fa-layer-group"></i> BAGIAN I &bull; HALAMAN 104–110
+          </div>
+
+          <h2 class="article-section-title">
+            Hakikat Pemasaran, 7 Orientasi, dan Bauran Marketing Mix (4P)
+          </h2>
+
+          <p class="article-body-p">
+            Dalam dunia industri perangkat keras komputer, <strong>pemasaran adalah sistem pertukaran nilai</strong>
+            yang berfokus pada pemenuhan kebutuhan serta penjagaan kepuasan konsumen. American Marketing Association
+            (AMA) menegaskan bahwa pemasaran bukan semata-mata transaksi jual-beli sesaat, melainkan proses menyeluruh
+            dalam menciptakan dan mengomunikasikan nilai guna barang kepada pelanggan.
+          </p>
+
+          <!-- 7 Orientasi Box -->
+          <div class="neo-sub-box">
+            <h3 class="sub-box-title"><i class="fa-solid fa-compass text-yellow"></i> 7 Ragam Orientasi Bisnis (Hal.
+              105–108)</h3>
+            <p class="sub-box-intro">Orientasi berakar pada pertanyaan: <em>"Apakah produk produsen dapat memenuhi
+                kebutuhan konsumen?"</em></p>
+
+            <div class="orientasi-cards-list">
+              <div class="orient-mini-card">
+                <span class="num-badge">1</span>
+                <div>
+                  <strong>Orientasi pada Produk:</strong>
+                  <p>Menekankan kualitas spesifikasi tinggi dengan keyakinan konsumen selalu memburu barang bermutu.</p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card">
+                <span class="num-badge">2</span>
+                <div>
+                  <strong>Orientasi pada Penjualan:</strong>
+                  <p>Mementingkan promosi agresif dan menghabiskan stok produk yang ada dengan harga setinggi mungkin.
+                  </p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card">
+                <span class="num-badge">3</span>
+                <div>
+                  <strong>Orientasi pada Produksi:</strong>
+                  <p>Fokus pada kapasitas produksi massal untuk menekan ongkos unit ketika pasar menyerap jumlah besar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card highlight-orient">
+                <span class="num-badge cyan">4</span>
+                <div>
+                  <strong>Orientasi pada Pemasaran (Kontemporer):</strong>
+                  <p>Paling sering digunakan saat ini: produsen aktif memasok hardware yang benar-benar dibutuhkan
+                    konsumen.</p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card">
+                <span class="num-badge">5</span>
+                <div>
+                  <strong>Orientasi pada Konsumen:</strong>
+                  <p>Kuncinya adalah mendengarkan dan mengikuti selera spesifik konsumen serta daya belinya.</p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card">
+                <span class="num-badge">6</span>
+                <div>
+                  <strong>Orientasi pada Perusahaan:</strong>
+                  <p>Divisi pemasaran diposisikan sebagai navigator utama bagi divisi perakitan, teknis, dan keuangan.
+                  </p>
+                </div>
+              </div>
+
+              <div class="orient-mini-card full-span">
+                <span class="num-badge green">7</span>
+                <div>
+                  <strong>Kerja Sama Saling Menguntungkan (Win-Win):</strong>
+                  <p>Produsen memperoleh modal kembali plus laba wajar, sementara konsumen menerima hardware andal
+                    bergaransi resmi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formula 4P Marketing Mix -->
+          <div class="neo-sub-box">
+            <h3 class="sub-box-title"><i class="fa-solid fa-cubes text-cyan"></i> Bauran Pemasaran 4P (Jerome E.
+              McCarthy, 1960)</h3>
+            <p class="sub-box-intro">Pilar utama yang menentukan keberhasilan pemasaran produk perangkat keras komputer:
+            </p>
+
+            <div class="four-p-grid">
+              <div class="four-p-card">
+                <div class="p-letter">P1</div>
+                <h4>Product (Produk)</h4>
+                <p>Spesifikasi hardware, performa prosesor/RAM, fitur pendingin (cooling), paket driver, serta garansi
+                  resmi purna jual.</p>
+              </div>
+
+              <div class="four-p-card">
+                <div class="p-letter">P2</div>
+                <h4>Price (Harga)</h4>
+                <p>Penetapan harga berbasis sains (HPP + margin), diskon pembelian bundling, dan opsi pembayaran cicilan
+                  terjangkau.</p>
+              </div>
+
+              <div class="four-p-card">
+                <div class="p-letter">P3</div>
+                <h4>Place (Tempat/Distribusi)</h4>
+                <p>Jalur penyaluran barang: toko komputer fisik, gudang distributor resmi, e-commerce, hingga jaringan
+                  reseller daerah.</p>
+              </div>
+
+              <div class="four-p-card">
+                <div class="p-letter">P4</div>
+                <h4>Promotion (Promosi)</h4>
+                <p>Aktivitas komunikasi, ulasan benchmark YouTube, branding terpercaya, diskon peluncuran, dan pameran
+                  teknologi.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED SECTION 2: LINGKUNGAN PESTLE & STRATEGI -->
+    <section class="neo-section-block" id="lingkungan-dan-strategi">
+      <div class="neo-container">
+
+        <div class="neo-content-card">
+          <div class="card-kicker-tag cyan">
+            <i class="fa-solid fa-earth-americas"></i> BAGIAN II &bull; HALAMAN 111–114
+          </div>
+
+          <h2 class="article-section-title">
+            Analisis Lingkungan Makro PESTLE, Mikro, &amp; Keunggulan Bersaing
+          </h2>
+
+          <p class="article-body-p">
+            Sebuah bisnis perangkat keras tidak beroperasi sendirian. Menurut <strong>Swastha</strong>, strategi
+            pemasaran adalah serangkaian rancangan besar agar usaha dapat beroperasi meraih target, khususnya bagi usaha
+            kecil di saat krisis ekonomi.
+          </p>
+
+          <!-- PESTLE Visual Box -->
+          <div class="pestle-cyber-wrapper">
+            <div class="pestle-header-banner">
+              <span>MODEL EVALUASI LINGKUNGAN MAKRO (PESTLE)</span>
+            </div>
+            <div class="pestle-grid-items">
+              <div class="pestle-box">
+                <span class="pestle-char">P</span>
+                <strong>Politik</strong>
+                <p>Kebijakan pemerintah, aturan impor komponen semikonduktor, regulasi TKDN.</p>
+              </div>
+              <div class="pestle-box">
+                <span class="pestle-char">E</span>
+                <strong>Ekonomi</strong>
+                <p>Kurs Dollar AS terhadap Rupiah, inflasi nasional, daya beli masyarakat.</p>
+              </div>
+              <div class="pestle-box">
+                <span class="pestle-char">S</span>
+                <strong>Sosial</strong>
+                <p>Gaya hidup WFH, tren gaming e-sports, lonjakan kebutuhan konten kreator.</p>
+              </div>
+              <div class="pestle-box">
+                <span class="pestle-char">T</span>
+                <strong>Teknologi</strong>
+                <p>Kecepatan inovasi mikroprosesor, transisi memori DDR5, WiFi 6/7, chip AI.</p>
+              </div>
+              <div class="pestle-box">
+                <span class="pestle-char">L</span>
+                <strong>Legal</strong>
+                <p>Sertifikasi izin edar SDPPI/Postel, hak paten, UU perlindungan konsumen.</p>
+              </div>
+              <div class="pestle-box">
+                <span class="pestle-char">E</span>
+                <strong>Ekologi</strong>
+                <p>Pengelolaan limbah elektronik (e-waste), efisiensi daya listrik hijau.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lingkungan Mikro -->
+          <div class="neo-sub-box">
+            <h3 class="sub-box-title"><i class="fa-solid fa-users text-green"></i> 4 Komponen Lingkungan Mikro
+              (Terkendali)</h3>
+            <div class="micro-cards-four">
+              <div class="m-card"><strong>1. Konsumen:</strong> Pembeli individual, kantor, instansi lab sekolah.</div>
+              <div class="m-card"><strong>2. Pegawai:</strong> Teknisi perakit PC, staf penjualan dan customer support.
+              </div>
+              <div class="m-card"><strong>3. Supplier:</strong> Pemasok grosir motherboard, processor, casing, PSU.
+              </div>
+              <div class="m-card"><strong>4. Media:</strong> Portal review teknologi dan komunitas online hardware.
+              </div>
+            </div>
+          </div>
+
+          <!-- Keunggulan Bersaing -->
+          <div class="neo-sub-box yellow-border">
+            <h3 class="sub-box-title"><i class="fa-solid fa-trophy text-yellow"></i> 6 Keunggulan Diferensiasi (Lambing
+              &amp; Kuehl, 2000)</h3>
+            <p class="sub-box-intro">Bagi usaha baru di bidang hardware, 6 kunci memenangkan persaingan:</p>
+            <div class="diferensiasi-chips">
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 1. Kualitas lebih baik</span>
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 2. Harga lebih bersaing &amp; bisa ditawar</span>
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 3. Lokasi lebih cocok, dekat &amp; cepat</span>
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 4. Seleksi barang lebih menarik</span>
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 5. Pelayanan ramah &amp; memuaskan</span>
+              <span class="dif-chip"><i class="fa-solid fa-check"></i> 6. Kecepatan penyaluran barang</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED SECTION 3: PERIKLANAN PRODUK HARDWARE -->
+    <section class="neo-section-block" id="periklanan-hardware">
+      <div class="neo-container">
+
+        <div class="neo-content-card">
+          <div class="card-kicker-tag yellow">
+            <i class="fa-solid fa-bullhorn"></i> BAGIAN III &bull; HALAMAN 114–117
+          </div>
+
+          <h2 class="article-section-title">
+            Periklanan: 5 Fungsi Komunikasi Kotler, Syarat Etis, &amp; Ragam Media
+          </h2>
+
+          <p class="article-body-p">
+            Menurut <strong>Kotler (1999)</strong>, iklan adalah segala bentuk penyajian dan promosi ide, barang, atau
+            jasa non-personal yang dibayar oleh sponsor tertentu.
+          </p>
+
+          <!-- 5 Fungsi Iklan -->
+          <div class="neo-sub-box">
+            <h3 class="sub-box-title"><i class="fa-solid fa-signal text-cyan"></i> 5 Fungsi Komunikasi Periklanan</h3>
+            <div class="five-ad-functions">
+              <div class="ad-fn-box">
+                <span class="fn-badge">1</span>
+                <strong>Menginformasikan</strong>
+                <p>Mengenalkan produk hardware baru dan mengedukasi spesifikasi dasar ke khalayak luas.</p>
+              </div>
+              <div class="ad-fn-box">
+                <span class="fn-badge">2</span>
+                <strong>Membujuk</strong>
+                <p>Membangun permintaan selektif (merek kita lebih unggul dibanding pesaing lewat comparative
+                  advertising).</p>
+              </div>
+              <div class="ad-fn-box">
+                <span class="fn-badge">3</span>
+                <strong>Mengingatkan</strong>
+                <p>Menjaga retensi ingatan konsumen pada produk matang saat mereka butuh servis atau upgrade unit.</p>
+              </div>
+              <div class="ad-fn-box">
+                <span class="fn-badge">4</span>
+                <strong>Memberi Nilai Tambah</strong>
+                <p>Mengubah persepsi produk menjadi tampak lebih mewah, bergengsi, dan meyakinkan di mata konsumen.</p>
+              </div>
+              <div class="ad-fn-box">
+                <span class="fn-badge">5</span>
+                <strong>Mendukung Promosi Lain</strong>
+                <p>Memperkuat kinerja sales representative dan menyukseskan program kupon atau bonus toko.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Syarat Iklan & Jenis Media -->
+          <div class="two-columns-equal">
+            <div class="neo-mini-panel">
+              <h4><i class="fa-solid fa-clipboard-check text-green"></i> 4 Syarat Iklan yang Baik (Hal. 115)</h4>
+              <ul class="neo-check-list">
+                <li><i class="fa-solid fa-check"></i> <strong>Objektif dan Jujur:</strong> Bebas manipulasi klaim
+                  teknis.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Jelas dan Mudah Dipahami:</strong> Bahasa lugas bagi awam.
+                </li>
+                <li><i class="fa-solid fa-check"></i> <strong>Tidak Menyinggung Pihak Lain:</strong> Menghormati etika.
+                </li>
+                <li><i class="fa-solid fa-check"></i> <strong>Menarik Perhatian:</strong> Memikat secara visual grafis.
+                </li>
+              </ul>
+            </div>
+
+            <div class="neo-mini-panel">
+              <h4><i class="fa-solid fa-newspaper text-yellow"></i> Ragam Media Iklan (Hal. 116–117)</h4>
+              <ul class="neo-check-list">
+                <li><strong>Iklan Baris:</strong> 3–4 baris hemat biaya untuk jasa servis/loker.</li>
+                <li><strong>Iklan Kolom:</strong> Lebih tinggi dilengkapi gambar &amp; logo.</li>
+                <li><strong>Iklan Advertorial:</strong> Dikemas seperti artikel berita ulasan.</li>
+                <li><strong>Iklan Elektronik:</strong> Radio (suara), TV &amp; Internet (multimedia).</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED SECTION 4: AFILIASI, DROPSHIP & MEDIA KHUSUS -->
+    <section class="neo-section-block" id="afiliasi-dan-dropship">
+      <div class="neo-container">
+
+        <div class="neo-content-card">
+          <div class="card-kicker-tag green">
+            <i class="fa-solid fa-network-wired"></i> BAGIAN IV &bull; HALAMAN 117–122
+          </div>
+
+          <h2 class="article-section-title">
+            Strategi Khusus Industri Hardware: Afiliasi, Dropship, &amp; Media Promosi
+          </h2>
+
+          <p class="article-body-p">
+            Industri perangkat keras memiliki siklus hidup produk pendek, persaingan ketat, dan berbasis standar terbuka
+            (open standard). Tiga strategi utama yang menjadi senjata wirausahawan:
+          </p>
+
+          <!-- Strategy 1: Affiliate -->
+          <div class="neo-sub-box">
+            <div class="strat-header-bar">
+              <span class="neo-pill-badge yellow">STRATEGI 1</span>
+              <h3>Program Afiliasi (Affiliate Marketing / Makelar Online)</h3>
+            </div>
+            <p>
+              Produsen memberikan <strong>tracking URL unik</strong> kepada affiliate partner. Saat audiens mengeklik
+              link tersebut dan melakukan transaksi hardware, produsen membayar komisi penjualan.
+            </p>
+            <div class="platform-chips-row">
+              <span class="p-chip">Shareasale.com</span>
+              <span class="p-chip">CJ.com (Commission Junction)</span>
+              <span class="p-chip">Idevaffiliate.com</span>
+              <span class="p-chip">Cake.com</span>
+            </div>
+          </div>
+
+          <!-- Strategy 2: Dropship -->
+          <div class="neo-sub-box">
+            <div class="strat-header-bar">
+              <span class="neo-pill-badge cyan">STRATEGI 2</span>
+              <h3>Metode Drop-Ship (Dropshipping Tanpa Stok Fisik)</h3>
+            </div>
+            <p>
+              Penjual (dropshipper) tidak perlu menyetok barang secara fisik. Penjual menerima pesanan &amp; transfer
+              dari pembeli, lalu meneruskan pesanan ke distributor grosir yang langsung mengirimkan barang ke pembeli
+              akhir.
+            </p>
+
+            <!-- Diagram Alur Dropship -->
+            <div class="neo-dropship-diagram">
+              <div class="d-node">
+                <span class="d-step-num">1</span>
+                <strong>Reseller</strong>
+                <span>Promosi produk di web/medsos</span>
+              </div>
+              <div class="d-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="d-node">
+                <span class="d-step-num">2</span>
+                <strong>Konsumen</strong>
+                <span>Order &amp; transfer uang</span>
+              </div>
+              <div class="d-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="d-node">
+                <span class="d-step-num">3</span>
+                <strong>Reseller</strong>
+                <span>Order ke supplier grosir</span>
+              </div>
+              <div class="d-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="d-node success-node">
+                <span class="d-step-num">4</span>
+                <strong>Supplier</strong>
+                <span>Kirim langsung ke konsumen</span>
+              </div>
+            </div>
+
+            <div class="dropship-two-ways">
+              <div class="d-way-card">
+                <h5>A. Metode Blind Ship</h5>
+                <p>Supplier/produsen sama sekali <em>tidak mencantumkan</em> label identitas aslinya pada paket kiriman
+                  agar pembeli yakin barang dikirim oleh reseller.</p>
+              </div>
+              <div class="d-way-card">
+                <h5>B. Dropship Mencantumkan Label</h5>
+                <p>Mencantumkan nama brand toko reseller pada resi dan kemasan guna membangun kredibilitas merek dalam
+                  jangka panjang.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strategy 3: Pasar Promosi & Media Khusus -->
+          <div class="neo-sub-box">
+            <div class="strat-header-bar">
+              <span class="neo-pill-badge green">STRATEGI 3 &bull; TIGA MEDIA KHUSUS</span>
+              <h3>Pasar Promosi Bundling, Nawala, Katalog &amp; SEO</h3>
+            </div>
+            <p>
+              <strong>Pasar Promosi / Giveaway:</strong> Bekerja sama dengan vendor PC raksasa agar produk periferal
+              kita dibeli dalam kuantitas masal sebagai bonus cuma-cuma produk mereka.
+            </p>
+
+            <div class="three-media-cards">
+              <div class="media-card-item">
+                <div class="m-ico"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <h4>1. Nawala (Newsletter)</h4>
+                <p>Email berkala yang mengedepankan nilai guna (tips rakit PC, update driver) guna merawat loyalitas
+                  pelanggan.</p>
+              </div>
+
+              <div class="media-card-item">
+                <div class="m-ico"><i class="fa-solid fa-book-bookmark"></i></div>
+                <h4>2. Katalog Produk</h4>
+                <p>Daftar foto dan spesifikasi port/daya/harga agar calon pembeli mandiri membandingkan unit yang pas.
+                </p>
+              </div>
+
+              <div class="media-card-item">
+                <div class="m-ico"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h4>3. Mesin Pencari (SEO)</h4>
+                <p>Optimasi web agar muncul di halaman 1 Google saat konsumen mengetik <em>"printer kantor"</em> atau
+                  <em>"servis laptop"</em>.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEVELOPER SECTION (SATRIA NUGRAHA) -->
+    <section class="neo-section-block" id="author-card">
+      <div class="neo-container">
+
+        <div class="neo-author-profile-box">
+          <div class="author-top-banner">
+            <span class="pill-author-dev"><i class="fa-solid fa-code"></i> OFFICIAL DEVELOPER &bull; SMK TKJ</span>
+          </div>
+
+          <div class="author-flex-layout">
+            <div class="author-avatar-col">
+              <div class="avatar-ring-neo">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <span class="author-tag-name">Satria Nugraha</span>
+            </div>
+
+            <div class="author-info-col">
+              <div class="author-sub-title">PORTAL PEMBELAJARAN PKK KELAS XII</div>
+              <h2 class="author-main-heading">Satria Nugraha</h2>
+              <p class="author-desc-p">
+                Website portal materi ini dirancang dan dikembangkan secara mandiri oleh <strong>Satria Nugraha</strong>
+                untuk menyajikan rangkuman komprehensif Bab 4: Pemasaran Produk Perangkat Keras (Halaman 103 s.d. 122).
+                Dirancang dengan estetika neo-cyber modern, tipografi kontras tinggi, navigasi responsif, serta
+                indikator scrollbar dinamis 0-100%.
+              </p>
+
+              <div class="author-pills-row">
+                <span class="tech-pill"><i class="fa-brands fa-html5"></i> Semantic HTML5</span>
+                <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> Vanilla CSS Neo-Pop</span>
+                <span class="tech-pill"><i class="fa-brands fa-js"></i> Modern JavaScript</span>
+                <span class="tech-pill"><i class="fa-solid fa-microchip"></i> Hardware TKJ</span>
+                <span class="tech-pill"><i class="fa-solid fa-chart-line"></i> Digital Marketing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="neo-footer">
+      <div class="neo-container footer-flex">
+        <div class="footer-left">
+          <span class="footer-brand-title">HARDWARE<span class="text-cyan">PKK</span> JOURNAL</span>
+          <p>Materi Produk Kreatif dan Kewirausahaan (PKK) Bab 4 &bull; Halaman 103–122 SMK/MAK TKJ.</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-dev-pill">
+            Developed with <i class="fa-solid fa-heart text-pink"></i> by <strong>Satria Nugraha</strong>
+          </div>
+          <p class="copyright-sub">&copy; 2026 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ===================================================================
+       ICONIC FLOATING BOTTOM PROGRESS BAR (MATCHING ALL SCREENSHOTS)
+       Vibrant Multi-Color Rainbow Progress 0% - 100%
+  =================================================================== -->
+  <div class="floating-progress-capsule" id="floatingProgressCapsule">
+    <!-- Inner Rainbow Track -->
+    <div class="progress-track-outer">
+      <div class="progress-fill-rainbow" id="rainbowProgressFill" style="width: 0%;"></div>
+    </div>
+
+    <!-- Percentage Badge on the Right -->
+    <div class="progress-percent-badge" id="rainbowPercentBadge">
+      <i class="fa-solid fa-bolt"></i> <span id="percentText">0%</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
